@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sigma-control-btn {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  > button {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+
+.sigma-controls {
+  z-index: 2001;
+  position: absolute;
+  z-index: 1000;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  bottom: 5px;
+  right: 5px;
+  &:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}

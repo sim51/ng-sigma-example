@@ -1,0 +1,11 @@
+<div
+  class="sigma-control-forceatlas2 sigma-control-btn"
+  [ngClass]="isRunning ? 'running' : 'stopped'"
+>
+  <button
+    (click)="toggle()"
+    [title]="
+      isRunning ? 'Stop the layout animation' : 'Start the layout animation'
+    "
+  ></button>
+</div>

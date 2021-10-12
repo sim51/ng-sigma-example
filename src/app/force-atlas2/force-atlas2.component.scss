@@ -1,0 +1,25 @@
+.sigma-control-forceatlas2 {
+  &.running {
+    > button {
+      background-image: url("../../assets/icons/stop-solid.svg?encoding=base64");
+      background-size: 40%;
+      &:after {
+        content: "";
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        background-image: url("../../assets/icons/spinner-solid.svg?encoding=base64");
+        animation: rotation 1.2s linear infinite;
+      }
+    }
+  }
+
+  &.stopped {
+    > button {
+      background-image: url("../../assets/icons/play-solid.svg?encoding=base64");
+    }
+  }
+}
